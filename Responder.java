@@ -23,8 +23,8 @@ public class Responder
      */
     public String generateResponse()
     {
-        if (responseMap.containsKey(word)) {
-            return responseMap.get(word);
+        if (responseMap.containsKey()) {
+            return responseMap.get();
         }
         else {
             return "That sounds interesting. Tell me more...";

@@ -37,14 +37,7 @@ and deletions.
 
 25. 
 
-Two type parameters, one for key type K and V. 
-put(K key, V value)
-get(Object key)
-remove(Object key)
-containsKey(object key)
-containsValue(Object value)
-entrySet(),keySet(),values()
-Yes, the same type could be used for both parameters.
+
 
 26.
 
@@ -133,7 +126,8 @@ Instead of returning on the first match, collect all matches and respond accordi
 
 42. Smarter default responses
 
-If not match, check input words like "why", "how, "who", and return a related default.
+If there is no match, check input words like "why", "how, "who",
+and return a related default.
 
 
 
