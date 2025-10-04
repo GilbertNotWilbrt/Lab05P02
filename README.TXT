@@ -32,10 +32,11 @@ This project is only a first, rudimentary step towards the full solution.
 24. What is a HashMap?
 
 A HashMap is a class in Java that implements the Map interface. It stores key value-piars.
-These keys are unique and they map to exactly oine value. It allows fast lookups, insertions,
+These keys are unique and they map to exactly one value. It allows fast lookups, insertions,
 and deletions.
 
 25. 
+
 
 
 
@@ -44,6 +45,7 @@ and deletions.
 Use map.size()
 
 27.
+
 
 28. 
 
@@ -73,6 +75,8 @@ TechSupport system with a map
 Use HashMap<String, String> where keys are words and values are responses.
 
 33.
+
+Corrected the Responder class and updated the SupportSystem
 
 34.
 
