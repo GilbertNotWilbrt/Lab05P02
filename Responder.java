@@ -1,37 +1,30 @@
 import java.util.HashMap;
-/**
- * The responder class represents a response generator object.
- * It is used to generate an automatic response to an input string.
- * 
- * @author  Michael Kölling and David J. Barnes
- * @version 7.0
- */
+
 public class Responder
 {
     private HashMap<String, String> responseMap;
-    
-    
+
     public Responder()
     {
-        responseMap = new HashMap<String, String>();
+        responseMap = new HashMap<>();
         fillResponseMap();
     }
 
-    /**
-     * Generate a response.
-     * @return   A string that should be displayed as the response
-     */
-    public String generateResponse()
+    public String generateResponse(String word)
     {
-        if (responseMap.containsKey()) {
-            return responseMap.get();
-        }
-        else {
-            return "That sounds interesting. Tell me more...";
+        if (responseMap.containsKey(word)) {
+            return responseMap.get(word);
+        } else {
+            return pickDefaultResponse();
         }
     }
-    
-     private void fillResponseMap()
+
+    private String pickDefaultResponse()
+    {
+        return "That sounds interesting. Tell me more...";
+    }
+
+    private void fillResponseMap()
     {
         responseMap.put("slow", "Maybe your computer is running too many programs.");
         responseMap.put("crash", "That sounds serious. Have you tried restarting?");
@@ -40,5 +33,3 @@ public class Responder
         responseMap.put("mac", "That might be a Mac problem, not ours.");
     }
 }
-
-

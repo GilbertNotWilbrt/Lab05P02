@@ -44,7 +44,7 @@ public class SupportSystem
                 finished = true;
             }
             else {
-                String response = responder.generateResponse();
+                String response = responder.generateResponse(input.toLowerCase());
                 System.out.println(response);
             }
         }

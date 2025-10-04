@@ -26,7 +26,7 @@ public class MapTester
         tester.enterNumber ("Alice", "1234");
         tester.enterNumber("Bob", "5678");
         
-        String number = tester.lookupNumber("Alice");
-        System.out.println("Alice's number is: " + number);
+        System.out.println(tester.lookupNumber("Alice"));
+        System.out.println(tester.lookupNumber("Bob"));
     }
 }
